@@ -2,13 +2,62 @@ body {
   text-align: center;
   background-color: #0ABDBA;
   color: aliceblue;
-  
+  font-family: 'Poppins', sans-serif;;
+}
+
+.container {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 30px;
+  box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.785);
+  border-radius: 4px;
+  background-color: aliceblue;
+  color: rgba(55, 55, 55, 0.785);
+}
+
+.city {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-bottom: 1px dashed rgb(199, 224, 246);
+}
+
+.city:last-child {
+  border: none;
+}
+
+.time {
+  font-size: 25px;
+}
+
+.time small {
+  font-size: 12px;
+  vertical-align: middle;
+  line-height: 25px;
 }
 
 h1, h2 {
-  text-shadow: 2px 2px rgba(128, 128, 128, 0.785);
+  color: #0ABDBA;  
+}
+
+h1 {
+  font-size: 50px;
+  text-shadow: 2px 2px rgba(148, 147, 147, 0.785);
+}
+
+select {
+   width: 25%;
+   border-radius: 4px;
+   padding: 5px;
+
+}
+
+h2 {
+  margin: 0;
 }
 
 footer {
   margin-top: 22px;
+  color: rgb(199, 224, 246);
 }
