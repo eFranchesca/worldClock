@@ -21,6 +21,17 @@ sanFranciscoTimeElement.innerHTML = `${sanFranciscoTime.format('h:mm:ss')}
 <small>${sanFranciscoTime.format("A")}</small>`;
 }, 1000);
 
+setInterval(function() {
+  let bangkokElement = document.querySelector("#bangkok");
+  let bangkokDateElement = bangkokElement.querySelector(".date");
+  let bangkokTimeElement = bangkokElement.querySelector(".time");
+  let bangkokTime = moment().tz("Asia/Bangkok");
+  
+  bangkokDateElement.innerHTML = moment().format("MMMM Do YYYY");
+  bangkokTimeElement.innerHTML = `${bangkokTime.format('h:mm:ss')}
+  <small>${bangkokTime.format("A")}</small>`;
+  }, 1000);
+
 function updateCity(event) {
   let cityTimeZone = event.target.value;
   if (cityTimeZone === "current") {
